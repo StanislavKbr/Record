@@ -83,3 +83,24 @@
 2023-10-09 23:31:57,596 INFO R.BaseTest [main] Открыта страница - https://dev.drec.rosatom.local/auth
 2023-10-09 23:31:57,887 INFO R.Test1Test [main] Авторизация в системе под ДКП
 2023-10-09 23:32:01,062 INFO R.Test1Test [main] Обязательные поля создания списка КПЭ - заполнены
+2023-10-11 15:47:49,933 INFO R.BaseTest [main] Драйвер для браузера Chrome
+2023-10-11 15:47:57,117 INFO R.BaseTest [main] Драйвер запущен
+2023-10-11 15:48:02,668 INFO R.BaseTest [main] Открыта страница - https://dev.drec.rosatom.local/auth
+2023-10-11 15:48:03,005 INFO R.Test1Test [main] Авторизация в системе под ДКП
+2023-10-11 15:48:07,361 INFO R.Test1Test [main] Обязательные поля создания списка КПЭ - заполнены
+2023-10-11 16:02:34,123 INFO R.BaseTest [main] Драйвер для браузера Chrome
+2023-10-11 16:02:39,939 INFO R.BaseTest [main] Драйвер запущен
+2023-10-11 16:02:44,623 INFO R.BaseTest [main] Открыта страница - https://dev.drec.rosatom.local/auth
+2023-10-11 16:02:44,949 INFO R.Test1Test [main] Авторизация в системе под ДКП
+2023-10-11 16:02:50,561 INFO R.Test1Test [main] Обязательные поля создания списка КПЭ - заполнены
+2023-10-11 16:06:15,186 INFO R.BaseTest [main] Драйвер для браузера Chrome
+2023-10-11 16:06:20,893 INFO R.BaseTest [main] Драйвер запущен
+2023-10-11 16:06:26,128 INFO R.BaseTest [main] Открыта страница - https://dev.drec.rosatom.local/auth
+2023-10-11 16:06:26,465 INFO R.Test1Test [main] Авторизация в системе под ДКП
+2023-10-11 16:06:30,584 INFO R.Test1Test [main] Обязательные поля создания списка КПЭ - заполнены
+2023-10-11 16:11:04,825 INFO R.BaseTest [main] Драйвер для браузера Chrome
+2023-10-11 16:11:10,627 INFO R.BaseTest [main] Драйвер запущен
+2023-10-11 16:11:15,462 INFO R.BaseTest [main] Открыта страница - https://dev.drec.rosatom.local/auth
+2023-10-11 16:11:15,857 INFO R.Test1Test [main] Авторизация в системе под ДКП
+2023-10-11 16:11:19,977 INFO R.Test1Test [main] Обязательные поля создания списка КПЭ - заполнены
+2023-10-11 16:11:24,341 INFO R.Test1Test [main] Тест завершен

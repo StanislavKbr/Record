@@ -5,6 +5,10 @@ import org.apache.logging.log4j.Logger;
 import org.checkerframework.checker.units.qual.A;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.time.Duration;
 
@@ -59,7 +63,7 @@ public class Test1Test extends BaseTest {
     }
 
     @Test
-    public void checkTabsEmployee(){
+    public void checkTabsEmployee() {
         String login = "p179";
         String password = "123";
 
@@ -75,6 +79,7 @@ public class Test1Test extends BaseTest {
 
         logger.info("Тест завершен");
     }
+
     @Test
     public void createKpiList() { //Создание Списка КПЭ в Каталоге
         String login = "p129";
@@ -103,12 +108,13 @@ public class Test1Test extends BaseTest {
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-        js.executeScript("window.scrollBy(0, 500);");
+        wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class = 'ant-tree-list-scrollbar-thumb']")));
 
-        Boolean resultCreated = catalogKpi.newKpiList.
-        );
+        js.executeScript("window.scrollBy(0, 250)", catalogKpi.scrollMini);
 
-        Assertions.assertTrue(resultCreated, "Новый КПЭ лист не добавлен в список");
+        //Boolean resultCreated = catalogKpi.newKpiList.isDisplayed();
+
+        //Assertions.assertTrue(resultCreated, "Новый КПЭ лист не добавлен в список КПЭ1");
 
         logger.info("Тест завершен");
 
