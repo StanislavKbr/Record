@@ -7,12 +7,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import javax.xml.xpath.XPath;
-
 public class CatalogKpi {
     private Logger logger = LogManager.getLogger(CatalogKpi.class);
 
-    @FindBy(xpath = "//button[@class='ant-btn ant-btn-lg ant-btn-icon-only'] ") //Добавление нового списка КПЭ
+    @FindBy(xpath = "//button[@class='ant-btn ant-btn-default ant-btn-lg ant-btn-icon-only']") //Добавление нового списка КПЭ
     WebElement addPlusButton;
 
     @FindBy(xpath = "//input[@class='ant-input ant-input-lg']") //Поле наименование списка КПЭ
@@ -33,8 +31,10 @@ public class CatalogKpi {
     @FindBy(xpath = "//span[text()= 'Новый тестовый список КПЭ1']") //Созаднный КПЭ лист
     WebElement newKpiList;
 
+    @FindBy(xpath = "//div[@class='ant-tree-list-scrollbar ant-tree-list-scrollbar-vertical'] ")
+    WebElement scroll;
     @FindBy(xpath = "//div[@class = 'ant-tree-list-scrollbar-thumb']")
-    WebElement scrollMini;
+    WebElement scrollAfterMove;
 
     public CatalogKpi(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -49,5 +49,6 @@ public class CatalogKpi {
         saveButton.click();
         return this;
     }
+
 
 }
