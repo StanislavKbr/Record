@@ -24,13 +24,14 @@ public class MainPage {
     @FindBy(xpath = "//div[text() = 'Карьера и преемственность']")
     WebElement tabCareerAndSuccession;
 
-    @FindBy(xpath = "//div[text() = 'Сотрудник']")
+    @FindBy(xpath = "//span[text() = 'Сотрудник']")
     WebElement tabEmployee;
 
-    @FindBy(xpath = "//div[text() = 'Руководитель']")
+
+    @FindBy(xpath = "//span[text() = 'Руководитель']")
     WebElement tabManager;
 
-    @FindBy(xpath = "//div[text() = 'СУП']")
+    @FindBy(xpath = "//span[text() = 'СУП']")
     WebElement tabSUP;
 
     @FindBy(xpath = "//h4[text() = 'Оценка эффективности']")
@@ -63,9 +64,8 @@ public class MainPage {
     @FindBy(xpath = "//h4[text() = 'Моя команда']")
     WebElement placeholderMyComand;
 
-    @FindBy(xpath = "//span[text()= 'Каталог КПЭ']")
+    @FindBy(xpath = "//h5[text()= 'Каталог КПЭ']")
     WebElement BackgroundtileCatalogKPI;
-
 
 
     public MainPage(WebDriver driver) {

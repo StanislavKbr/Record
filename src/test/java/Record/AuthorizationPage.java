@@ -7,8 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.List;
-
 public class AuthorizationPage {
     private Logger logger = LogManager.getLogger(AuthorizationPage.class);
     @FindBy(xpath = "//input[@placeholder = 'Логин']")
@@ -31,8 +29,6 @@ public class AuthorizationPage {
         login.sendKeys(value);
         password.sendKeys(value2);
         enterButton.click();
-
-
     }
 
 }
