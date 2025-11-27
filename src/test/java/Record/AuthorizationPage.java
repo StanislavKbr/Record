@@ -29,7 +29,7 @@ public class AuthorizationPage {
         login.sendKeys(value);
         password.sendKeys(value2);
         enterButton.click();
-        // Добавил новый комментарий
+        // Добавил новый комментарий 1
     }
 
 }
